@@ -1,5 +1,5 @@
 import axios from "axios";
-import { Soci } from "../types";
+import type { Soci } from "../types";
 
 const API = import.meta.env.VITE_API_URL;
 
