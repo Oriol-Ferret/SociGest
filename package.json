@@ -1,5 +1,6 @@
 {
   "name": "soci-gest",
+  "homepage": "https://oriol-ferret.github.io/SociGest",
   "private": true,
   "version": "0.0.0",
   "type": "module",
