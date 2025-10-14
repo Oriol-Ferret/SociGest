@@ -4,6 +4,6 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/SociGest/', // Match your GitHub repository name
+  base: process.env.NODE_ENV === 'production' ? '/SociGest/' : '/',
   plugins: [react(), tailwindcss()],
 });
