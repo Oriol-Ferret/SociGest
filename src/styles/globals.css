@@ -1,0 +1,16 @@
+/* Estilos globales para los inputs */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+  color: #000000 !important; /* Negro puro */
+}
+
+/* Asegurar que el placeholder también sea visible */
+input::placeholder,
+textarea::placeholder {
+  color: #6b7280 !important; /* Un gris que contraste bien con el fondo blanco */
+  opacity: 1; /* Asegurar que la opacidad sea completa */
+}
