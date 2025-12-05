@@ -1,10 +1,10 @@
 export interface Soci {
-  id: string;
-  nom: string;
-  cognoms: string;
+  name: string;
   email: string;
-  tel?: string;
-  status: 'actiu' | 'baixa' | 'pendent';
+  telephone: number;
+  registerDate: string;
+  status: string;
+  quote: string;
 }
 
 export interface Mandat {

@@ -1,10 +1,14 @@
 import { Link, Outlet, useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import { useSocis } from '../hooks/useSocis';
 
 export default function Layout() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+
+  // Prefetch socis data when app loads
+  useSocis();
 
   const isActive = (path: string) => {
     return location.pathname === path ? 'border-indigo-500 text-gray-900' : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700';
@@ -39,7 +43,7 @@ export default function Layout() {
                 ))}
               </div>
             </div>
-            
+
             {/* Mobile menu button */}
             <div className="-mr-2 flex items-center sm:hidden">
               <button
